@@ -94,6 +94,7 @@ def smtp_client(port=1025, mailserver='127.0.0.1'):
     if recv5[:3] != '221':
         #print('221 reply not received from server.')
         pass
+    clientSocket.close()
     # Fill in end
 
 
